@@ -4,7 +4,7 @@
 
 ### Prerequisites
 
-Ruby 2.2.2
+Ruby 2.3
 Bundler
 
 ### Using The App
@@ -12,6 +12,7 @@ Bundler
 * Clone or download Repo
 * in your git, run '$ _path to folder_ && ruby app.rb'
 * open your browser and navigate to localhost:4567
+* can also access website from heroku:https://afternoon-chamber-95948.herokuapp.com/
 
 ## Built With
 
