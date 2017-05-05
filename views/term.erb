@@ -1,0 +1,18 @@
+<h1><%= @term.term %></h1>
+<hr>
+<strong>Definition(s)</strong>:
+<% if @term.definitions.length == 0 %>
+<p><em>This term does not yet have a definition</em></p>
+<% end %>
+<ul>
+  <% @term.definitions.each do |definition| %>
+  <li><%= definition.definition %></li>
+  <% end %>
+</ul>
+<hr>
+<h4>Add another definition for <%= @term.term %></h4>
+<form action="/term/<%= @term.id %>" method="post">
+  <label>If the term '<%= @term.term %>' has multiple meanings, enter a new difinition here:</label>
+  <input type="text" name="input-new-def" required>
+  <button type="submit">Submit</button>
+</form>

@@ -1,0 +1,6 @@
+<h1>Word Finder!</h1>
+<ul>
+  <% @terms.each do |term| %>
+  <li class="li-term"><a href="term/<%= term.id %>"><%= term.term %></a></li>
+  <% end %>
+</ul>
